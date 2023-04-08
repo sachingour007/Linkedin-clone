@@ -8,6 +8,7 @@
     margin-right: 20px;
     color: gray;
     cursor: pointer;
+    
 }
 .headerOption:hover{
     color:black;
@@ -21,5 +22,21 @@
     object-fit: contain;
     height: 25px !important;
     width: 25px !important;
-    
 }
+
+@media only screen and (max-width: 667px){
+    .headerOption{
+        
+    }
+    
+    .headerOption_title {
+      display: none;
+    }
+    .sidebar_button{
+        display: none;
+  
+    }
+    .headerOption_icon{
+
+    }
+  }

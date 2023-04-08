@@ -11,6 +11,7 @@ import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import MessageIcon from "@mui/icons-material/Message";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import AppsIcon from '@mui/icons-material/Apps';
 import { useDispatch } from "react-redux";
 import { logout } from "../../features/userSlice";
 import { auth } from "../firebase";
@@ -36,17 +37,20 @@ const Header = () => {
           <input type="text" placeholder="Search" />
         </div>
       </div>
-      <div className="header_right">
+      {}
+      <div className={`header_right`}>
         <HeaderOption title="Home" Icon={HomeIcon} />
         <HeaderOption title="My Newtork" Icon={SupervisorAccountIcon} />
         <HeaderOption title="Jobs" Icon={BusinessCenterIcon} />
         <HeaderOption title="messaging" Icon={MessageIcon} />
         <HeaderOption title="Notifications" Icon={NotificationsIcon} />
-        <HeaderOption
+        <HeaderOption 
           title="Me"
           avatar="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
           onClick={logoutOfApp}
         />
+        <hr  className="hr_border"/>
+        <HeaderOption title="Work" Icon={AppsIcon} />
       </div>
     </div>
   );

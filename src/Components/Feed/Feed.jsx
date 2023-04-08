@@ -37,6 +37,7 @@ const Feed = () => {
 
     db.collection("posts").add({
       name: user.displayName,
+      // userLike: user.displayName[],
       description: user.email,
       message: input,
       photoUrl: user.photoUrl || "",

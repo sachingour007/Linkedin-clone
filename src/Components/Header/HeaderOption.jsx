@@ -4,7 +4,7 @@ import styles from "./HeaderOption.module.css";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
 
-const HeaderOption = ({ avatar, title, Icon, onClick }) => {
+const HeaderOption = ({ avatar, title, Icon, onClick,  }) => {
   const user = useSelector(selectUser);
   // console.log(user);
 
@@ -12,9 +12,9 @@ const HeaderOption = ({ avatar, title, Icon, onClick }) => {
     <div onClick={onClick} className={styles.headerOption}>
       {Icon && <Icon className={styles.headerOption_icon} />}
       {avatar && (
-        <Avatar className={styles.headerOption_icon}>{user?.email[0]}</Avatar>
+        <Avatar className={`${styles.headerOption_icon}`}>{user?.email[0]}</Avatar>
       )}
-      <h3 className={styles.headerOption_title}>{title}</h3>
+      <h3 className={`${styles.headerOption_title}`}>{title}</h3>
     </div>
   );
 };

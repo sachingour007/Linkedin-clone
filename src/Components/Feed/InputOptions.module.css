@@ -13,3 +13,10 @@
 .inputOption > h4{
     margin-left: 5px;
 }
+
+@media only screen and (max-width: 667px){
+    .inputOption {
+      position: static;
+      
+    }
+  }

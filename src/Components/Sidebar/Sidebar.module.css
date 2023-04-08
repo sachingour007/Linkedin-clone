@@ -84,3 +84,17 @@
     margin: 0 10px 0 5px ;
     font-size: 19px;
 }
+@media only screen and (max-width:667px) and (min-width: 375px){
+    .sidebar {
+      margin-top: 10px;
+      min-width: fit-content;
+      max-width: 100%;
+      margin: 0;
+      position: static;
+      
+    }
+    .sidebar_button{
+        display: none;
+
+    }
+  }
